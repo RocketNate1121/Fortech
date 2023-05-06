@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortech</title>
+    <link rel="icon" href="images/NT-Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato:wght@300;400;900&family=Dela+Gothic+One&family=Noto+Sans:wght@300;400;600&family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><img src="../images/Logo.png" class="logo"></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img class="menu-icon" src="../images/menu_icon.png" alt="">
+        </label>
+        <div class="nav-links">
+            <ul>
+                <li><a href="value.html">Buy Now</a></li>
+                <li><a href="custom.html">Customize</a></li>
+                <li><a href="products.html">Prebuilt</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <!-- <li><a href="">About Us</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <section class="custom-form">
+        <a href="../index.html" class="back-btn"><img src="../images/back button.png" alt=""></i></a>
+
+        <form class="hidden" action="https://formsubmit.co/rocketnate1121@gmail.com" method="POST" >
+            <h1>Custom Parts</h1>
+            <p>Enter the parts for us to include in the build. 
+                Unspecified parts will be found by us and then confirmed by you.</p>
+            <div class="info">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <!-- <input type="text" id="phone" placeholder="Phone Number" required> -->
+            <div class="parts">
+                <input type="text" name="gpu" placeholder="Graphics Card">
+                <input type="text" name="cpu" placeholder="CPU">
+                <input type="text" name="motherboard" placeholder="Motherboard">
+                <input type="text" name="ram" placeholder="RAM">
+                <input type="text" name="storage" placeholder="Storage">
+                <input type="text" name="cpu cooler" placeholder="CPU Cooler">
+                <input type="text" id="psu" placeholder="Power Supply">
+                <input type="text" name="case" placeholder="Case">
+                <input type="text" name="extra" placeholder="Extras">
+                <input type="text" name="price" placeholder="Price">
+            </div>
+            <textarea name="message" rows="4" placeholder="Specifications/Questions"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
