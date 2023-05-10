@@ -341,6 +341,27 @@ nav{
     }
 }
 
+@media(min-height: 1160px){
+    #main-screen .pc-img{
+        bottom: 450px;
+    }
+    .main-text{
+        bottom: 260px;
+    }
+}
+
+@media(min-height: 1500px){
+    #main-screen{
+        height: 90vh;
+    }
+    #main-screen .pc-img{
+        bottom: 650px;
+    }
+    .main-text{
+        bottom: 460px;
+    }
+}
+
 /*-------------------------------------------*/
 /*--------------OPTIONS SCREEN---------------*/
 /*-------------------------------------------*/
@@ -520,6 +541,12 @@ nav{
     }
     #contact form textarea{
         height: 20px;
+    }
+}
+
+@media(min-height: 1500px){
+    #contact{
+        height: 35vh;
     }
 }
 
@@ -877,6 +904,12 @@ nav{
     }
     .prebuilt .btn{
         bottom: 18%;
+    }
+}
+
+@media(min-height: 1200px){
+    .prebuilt .btn{
+        bottom: 28%;
     }
 }
 
