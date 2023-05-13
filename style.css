@@ -216,11 +216,18 @@ nav{
     overflow: hidden;
 }
 
-#main-screen .pc-img{
+/* #main-screen .pc-img{
     position: absolute;
     width: 800px;
     left: 40px;
     bottom: 5%;
+} */
+
+#main-screen .pc-img{
+    position: absolute;
+    width: 450px;
+    left: 140px;
+    bottom: 20%;
 }
 
 .main-text{
@@ -258,8 +265,8 @@ nav{
         font-size: 25px;
     }
     #main-screen .pc-img{
-        width: 700px;
-        bottom: 8%;
+        width: 350px;
+        bottom: 25%;
     }
     .main-text{
         align-items: center;
@@ -268,7 +275,7 @@ nav{
 }
 
 @media(max-width: 1256px){
-    #main-screen .pc-img{
+    /* #main-screen .pc-img{
         width: 100%;
         height: 600px;
         object-fit: scale-down;
@@ -276,6 +283,12 @@ nav{
         bottom: 250px;
         align-items: center;
         left: 0;
+    } */
+    #main-screen .pc-img{
+        width: 350px;
+        bottom: 40%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .main-text{
         display: flex;
@@ -304,10 +317,10 @@ nav{
 }
 
 @media(max-width: 866px){
-    #main-screen .pc-img{
+    /* #main-screen .pc-img{
         width: 100%;
         object-position: 18vw 0%;
-    }
+    } */
     .main-text p{
         width: 170%;
         margin-left: -50%;
@@ -333,12 +346,11 @@ nav{
     .main-text .btn{
         margin-left: -50%;
     }
-    #main-screen .pc-img{
+    /* #main-screen .pc-img{
         width: 100%;
         height: 500px;
         object-position: 15vw 0%;
-        /* margin-left: -20%; */
-    }
+    } */
 }
 
 @media(min-height: 1160px){
@@ -444,6 +456,13 @@ nav{
         flex-basis: 100vw;
         height: 0;
     }
+    .op:nth-child(2){
+        transition-delay: 200ms;
+    }
+    
+    .op:nth-child(4){
+        transition-delay: 100ms;
+    }
     /* #options{
         height: 100vh;
     } */
@@ -476,6 +495,13 @@ nav{
         text-align: center;
         /* margin-bottom: 20px; */
         transform: translateX(-32%);
+    }
+    .op:nth-child(2){
+        transition-delay: 0ms;
+    }
+    
+    .op:nth-child(4){
+        transition-delay: 0ms;
     }
     /* #options{
         height: 160vh;
